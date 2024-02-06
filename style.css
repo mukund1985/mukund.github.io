@@ -5,28 +5,43 @@ body {
     line-height: 1.6;
 }
 
-header, section {
-    padding: 20px;
-}
-
 header {
     background: #333;
     color: #fff;
+    padding: 20px;
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
-}
-
-section {
-    margin-bottom: 20px;
-}
-
-section#contact {
-    background: #f4f4f4;
+header a {
+    color: #fff;
+    text-decoration: none;
 }
 
 h2 {
     color: #333;
+}
+
+section {
+    padding: 20px;
+}
+
+section#skills p, section#certifications ul {
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li::before {
+    content: "• ";
+    color: #333; /* Bullet color */
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
 }
