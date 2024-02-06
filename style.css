@@ -1,47 +1,91 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding: 20px;
+    background-color: #005A9C;
+    color: #ffffff;
+    padding: 20px 0;
     text-align: center;
 }
 
-header a {
-    color: #fff;
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header p {
+    margin: 10px 0;
+}
+
+a {
+    color: #ffffff;
     text-decoration: none;
 }
 
-h2 {
-    color: #333;
+a:hover {
+    text-decoration: underline;
 }
 
 section {
     padding: 20px;
+    margin: 20px 0;
 }
 
-section#skills p, section#certifications ul {
+h2 {
+    color: #005A9C;
+    border-bottom: 2px solid #005A9C;
+    padding-bottom: 6px;
+}
+
+h3 {
+    color: #333;
+    margin-top: 16px;
+}
+
+p, ul {
     margin-top: 0;
 }
 
 ul {
     list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-left: 20px;
+    position: relative;
 }
 
 li::before {
-    content: "• ";
-    color: #333; /* Bullet color */
+    content: "•";
+    color: #005A9C;
+    position: absolute;
+    left: -20px;
 }
 
-a {
+/* Responsive typography */
+@media (max-width: 768px) {
+    body {
+        padding: 0 10px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+}
+
+/* Link colors for non-header links */
+section a {
     color: #007bff;
     text-decoration: none;
 }
-a:hover {
+
+section a:hover {
     text-decoration: underline;
 }
